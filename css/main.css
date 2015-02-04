@@ -176,12 +176,12 @@
 	MEDIA QUERIES
 	**************************************/
 
-	@media only screen and(max-device-width: 320px) {
+	/*@media only screen and(max-device-width: 320px) {
 		body {
 			background: red;
 		}
 	}
-
+*/
 
 
 
