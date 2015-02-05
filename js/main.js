@@ -1,7 +1,3 @@
-/*$('.footer-nav').hide();
-$(window).scroll(function() {
-	if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		$(".footer-nav").show();
-	}
+$(document).ready(function(){
+	$("header nav ul li").css('width', $(document).width() / 2 - 2);
 });
-*/
