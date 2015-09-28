@@ -1,235 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-        /* The Body Document */
-        body {
-            background: black;
-            text-align: center;
-        }
-        
-        /* The container for the clock */
-        #watch {
-            font-size: 48px;
-            font-weight: 600;
-            font-family: Arial;
-        }
-	</style>
+	<title>Julie!</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
-    
-    
-<body id="body">
-<div id="clock"></div>
-    
-<!--  The JavaScript for the clock  -->
-<script>
-    var clock = document.querySelector("#clock"),
-        body = document.querySelector('#body');
-    
-    // all the colors available in css
-    var colors =[
-        "AliceBlue",
-        "AntiqueWhite",
-        "Aqua",
-        "Aquamarine",
-        "Azure",
-        "Beige",
-        "Bisque",
-        "Black",
-        "BlanchedAlmond",
-        "Blue",
-        "BlueViolet",
-        "Brown",
-        "BurlyWood",
-        "CadetBlue",
-        "Chartreuse",
-        "Chocolate",
-        "Coral",
-        "CornflowerBlue",
-        "Cornsilk",
-        "Crimson",
-        "Cyan",
-        "DarkBlue",
-        "DarkCyan",
-        "DarkGoldenRod",
-        "DarkGray",
-        "DarkGrey",
-        "DarkGreen",
-        "DarkKhaki",
-        "DarkMagenta",
-        "DarkOliveGreen",
-        "Darkorange",
-        "DarkOrchid",
-        "DarkRed",
-        "DarkSalmon",
-        "DarkSeaGreen",
-        "DarkSlateBlue",
-        "DarkSlateGray",
-        "DarkSlateGrey",
-        "DarkTurquoise",
-        "DarkViolet",
-        "DeepPink",
-        "DeepSkyBlue",
-        "DimGray",
-        "DimGrey",
-        "DodgerBlue",
-        "FireBrick",
-        "FloralWhite",
-        "ForestGreen",
-        "Fuchsia",
-        "Gainsboro",
-        "GhostWhite",
-        "Gold",
-        "GoldenRod",
-        "Gray",
-        "Grey","Green",
-        "GreenYellow",
-        "HoneyDew",
-        "HotPink",
-        "IndianRed",
-        "Indigo",
-        "Ivory",
-        "Khaki",
-        "Lavender",
-        "LavenderBlush",
-        "LawnGreen",
-        "LemonChiffon",
-        "LightBlue",
-        "LightCoral",
-        "LightCyan",
-        "LightGoldenRodYellow",
-        "LightGray",
-        "LightGrey",
-        "LightGreen",
-        "LightPink",
-        "LightSalmon",
-        "LightSeaGreen",
-        "LightSkyBlue",
-        "LightSlateGray",
-        "LightSlateGrey",
-        "LightSteelBlue",
-        "LightYellow",
-        "Lime",
-        "LimeGreen",
-        "Linen",
-        "Magenta",
-        "Maroon",
-        "MediumAquaMarine",
-        "MediumBlue",
-        "MediumOrchid",
-        "MediumPurple",
-        "MediumSeaGreen",
-        "MediumSlateBlue",
-        "MediumSpringGreen",
-        "MediumTurquoise",
-        "MediumVioletRed",
-        "MidnightBlue",
-        "MintCream",
-        "MistyRose",
-        "Moccasin",
-        "NavajoWhite",
-        "Navy",
-        "OldLace",
-        "Olive",
-        "OliveDrab",
-        "Orange",
-        "OrangeRed",
-        "Orchid",
-        "PaleGoldenRod",
-        "PaleGreen",
-        "PaleTurquoise",
-        "PaleVioletRed",
-        "PapayaWhip",
-        "PeachPuff",
-        "Peru",
-        "Pink",
-        "Plum",
-        "PowderBlue",
-        "Purple",
-        "Red",
-        "RosyBrown",
-        "RoyalBlue",
-        "SaddleBrown",
-        "Salmon",
-        "SandyBrown",
-        "SeaGreen",
-        "SeaShell",
-        "Sienna",
-        "Silver",
-        "SkyBlue",
-        "SlateBlue",
-        "SlateGray",
-        "SlateGrey",
-        "Snow",
-        "SpringGreen",
-        "SteelBlue",
-        "Tan",
-        "Teal",
-        "Thistle",
-        "Tomato",
-        "Turquoise",
-        "Violet",
-        "Wheat",
-        "White",
-        "WhiteSmoke",
-        "Yellow",
-        "YellowGreen"
-    ];
-    
-    // function returns a color and changes background
-    var get_color = function(){
-        var color = colors[Math.floor(Math.random() * colors.length)]; // random color
-        
-        // if color is black
-        if(color == 'Black' || color == 'black')
-        {   
-            // set the background to white and return the color
-            body.style.background = "White";
-            return color; 
-        } else if(color == 'white' || color == 'White') // if color is white
-        {
-            // set background to black and return color
-            body.style.background = "Black";
-            return color;
-        }else // otherwise
-        {
-            // always leave the background to white and return the color
-            body.style.background = "Black";
-            return color;
-        }
-        
-    }
-    
-    
-    var secondCounter = 0;
-    
-    // start the interval for each second (1000ms)
-    setInterval(function(){
-        // make a new date object for each second
-        var date = new Date();
-        
-        // count seconds that have passed sinced opened
-        secondCounter++;
-        
-        // print in the DOM the hour, min and secs
-        clock.innerHTML = "<p id = 'watch'>" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "</p>";
-        
-        // change the font color each second
-        clock.style.color = get_color();
-        
-        // if user has been on page for 20 seconds
-        if (secondCounter >= 20) {
-            // alert them
-            alert("You've been watching this for too long!! Go find something to do!!")
-            window.location = "http://codepen.io/pen/"; // redirect them to a useful page
-        } else { // otherwise
-            // just print how many seconds they been on the page.
-            clock.innerHTML += "<p> You've been here for " + secondCounter + " seconds </p>";
-        }
-        
-    }, 1000);
-</script>
+<body>
+	<div class="container">
+		
+		<div class="page-header">
+			<h1>Hello, Julie!!!</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-md-7">
+				<h3>Surprised?</h3>
+				<p>
+					Hello, Julie. After we finished talking last night. I couldn't sleep. Once again, that's your fault! Anyways, I'm not gonna write you anything on paper, sorry. I'm kind of writing it right now lol.
+				</p>
+				<p>
+					I used to know you back when we were little kids, now we're really old. You have changed a lot, I've notice a lot of things about you. For example: you're really smart and I know there are other brillian people out there but what separates you from them is that you have great common sense.
+				</p>
+				<p>
+					You have great sense of humor and I really like that. I love people who can make me laugh and people who I can be comfortable with, and you're one of them. I could keep going but I feel like I'm making you read too much so I'm going to stop here. If you'll like to hear more please let me know when I see you.
+				</p>
+			</div>
+			<div class="col-md-5">
+					<h3>Reminder</h3>
+					<p>What I'm going to tell you when I see you: </p>
+					<ol>
+						<li>Actually you remind me lol, I forgot.</li>
+					</ol>
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col-md-7">
+					<div class="thumbnail">
+						<img src="./img/babe.jpg">
+					</div>
+				</div>
+			</div>			
+		</div>
+		
+
+
+	</div>
 </body>
 </html>
