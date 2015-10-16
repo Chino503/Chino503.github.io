@@ -40,10 +40,10 @@ header h1,
 	text-indent: 50px;
 }
 
-.no {
+.wrapper .no {
 	text-align: center;
 	margin: 2em;
-	text-indent: none;
+	text-indent: 0;
 }
 
 @media screen and (min-width: 620px) {
@@ -66,10 +66,10 @@ header h1,
     -moz-column-gap: 40px;
     column-gap: 40px;
 	}
-	.no {
+	.wrapper .no {
 		text-align: center;
 		margin: 2em;
-		text-indent: none;
+		text-indent: 0;
 	}
 }
 
