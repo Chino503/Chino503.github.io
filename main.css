@@ -73,5 +73,19 @@ header h1,
 	}
 }
 
+@media screen and (min-width: 768px){
+.wrapper p.columns {
+		font-size: 1.3em;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		-webkit-column-rule: 2px dotted; /* Chrome, Safari, Opera */
+    -moz-column-rule: 2px dotted; /* Firefox */
+    column-rule: 2px dotted;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+	}	
+}
 
 
