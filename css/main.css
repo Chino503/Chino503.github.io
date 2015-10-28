@@ -1,0 +1,96 @@
+
+/***************************************
+				GENERAL
+****************************************/
+
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: Avenir, Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+#gallery,
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/***************************************
+				HEADER
+****************************************/
+
+#main-header {
+	/*border-bottom: 1px solid;*/
+	padding: 2em;
+	background: #F1F2F2;
+	color: #333;
+}
+
+#main-header h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#main-header h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0 0 10px;
+}
+
+#main-nav {
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+
+#main-nav a {
+	color: #000;
+}
+
+#main-nav a.selected li,
+#main-nav a li:hover  {
+	background: #000;
+	color: #F1F2F2;
+}
+
+#main-nav a:link li {
+	display: inline-block;
+	float: left;
+	color: #F1F2F2;
+	font-size: 0.9em;
+	padding: 5px 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	margin: 0 1px;
+}
+
+
+/***************************************
+				GALLERY
+****************************************/
+
+#gallery {
+	margin-top: 30px;
+}
+
+.image {
+	display: inline-block;
+	width: 45%;
+	margin: 1.5%;
+	padding: 1px;
+}
+
