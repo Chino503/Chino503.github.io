@@ -13,6 +13,7 @@
 body {
 	margin: 0;
 	background: #fff;
+	padding-bottom: 72px;
 }
 
 img {
@@ -97,15 +98,10 @@ img {
 	width: 45%;
 	margin: 1.5%;
 	padding: 1px;
-	background: #ddd;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
-	text-align: center;
 }
 
-.image img,
-.image p {
-	vertical-align: top;
+.image img {
+	vertical-align: middle;
 }
 
 
