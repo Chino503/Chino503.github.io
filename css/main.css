@@ -96,14 +96,9 @@ img {
 .image {
 	display: inline-block;
 	width: 45%;
+	height: 150px;
 	margin: 1.5%;
-	padding: 1px;
 }
-
-.image img {
-	vertical-align: middle;
-}
-
 
 
 @media screen and (min-width: 568px) {
