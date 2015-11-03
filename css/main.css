@@ -115,10 +115,15 @@ img {
 	}
 
 	.image {
-		width: 29%;
+		width: 30.3%;
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.image {
+		height: 280px;
+	}
+}
 
 
 
