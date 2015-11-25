@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	// this loop appends each image in the gallery division
 	for(var i = 0; i < img_name.length; i++){
-		$('#gallery').append('<div class="image" style="background: url(./img/'+img_name[i]+');"></div>');
+		$('#gallery').append('<a href="./img/'+img_name[i]+'" data-lightbox="gallery"><div class="image" style="background: url(./img/'+img_name[i]+');"></div></a>');
 	}
 
 	// this styles the images so they would fit perfectly on a square
