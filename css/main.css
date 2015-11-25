@@ -96,9 +96,8 @@ img {
 .image {
 	display: inline-block;
 	width: 45%;
-	/*height: 160px;*/
+	height: 160px;
 	margin: 1% 1.5%;
-	cursor: pointer;
 }
 
 
@@ -116,14 +115,14 @@ img {
 	}
 
 	.image {
-		width: 29.7%;
-		/*height: 160px;*/
+		width: 30.3%;
+		height: 160px;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.image {
-		/*height: 280px;*/
+		height: 280px;
 	}
 }
 
