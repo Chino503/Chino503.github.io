@@ -101,6 +101,38 @@ img {
 }
 
 
+
+/***************************************
+				PAGE: ABOUT
+****************************************/
+
+#about-header {
+	margin-top: 30px;
+}
+
+#user-img {
+	background: url("../img/logo.jpg") no-repeat;	
+	margin: 0 auto;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-position: center;
+}
+
+#about-text {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+/***************************************
+			MEDIA QUERY: PHONE-LANDSCAPE
+****************************************/
+
 @media screen and (min-width: 568px) {
 	#main-header h1 {
 		font-size: 3.5em;
@@ -119,6 +151,10 @@ img {
 		height: 160px;
 	}
 }
+
+/***************************************
+		MEDIA QUERY: TABLETS & DESTOPS
+****************************************/
 
 @media screen and (min-width: 768px) {
 	.image {
