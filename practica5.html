@@ -2,22 +2,97 @@
 <html>
 <head>
 	<title>CSS Basics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="highlight/styles/monokai-sublime.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<style type="text/css">
+/*		pre { 
+			width: 600px;
+			border-radius: 8px;
+		}*/
+	</style>
 </head>
-<body>
-	<header id="main-header">
-		<h1>Welcome to my page</h1>
-	</header>
+	<body>
+		<header id="main-header">
+			<h1>CSS Basics</h1>
+		</header>
+		
+		<section id="gallery">
 
-	<section id="gallery">
-		<h3>About</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
+			<h3>Que es CSS?</h3>
+			<ul>
+				<li>CSS describe cómo los elementos HTML se van a mostrar en la pantalla, papel, o en otros medios</li>
+				<li>CSS ahorra mucho trabajo . Se puede controlar el diseño de varias páginas web a la vez</li>
+			</ul>
 
-</body>
+			<h3>Sintax</h3>
+			<p>Sintax es un conjunto de reglas</p>
+			<p>CSS tiene su conjunto de reglas que son las siguientes:</p>
+			<ol>
+				<li>Selecor</li>
+				<li>Declaracion</li>
+				<ul>
+					<li>propiedad</li>
+					<li>valor</li>
+				</ul>
+			</ol>
+			<p>Ejemplo:</p>
+			<pre>
+				<code>
+	/* 
+	p - seleciona todos los elementos que son parafos
+	color - define que propiedad quiere cambiar a elemento selecionado
+	rojo - es el valor nuevo a elemento
+	*/
+	p { 
+		color: red;
+	}
+
+				</code>
+			</pre>
+			
+			<p>
+				Dentro de la etiqueta head pon el codigo siguiente:
+			</p>
+			<pre>
+				<code class="html">
+&lt;head&gt;
+	&lt;title&gt;CSS Basics&lt;/title&gt;
+	&lt;styles&gt;
+
+	&lt;!-- 
+	selector {
+		propiedad: valor;
+	}
+	--&gt;
+
+	&lt;/styles&gt;
+&lt;/head&gt;
+				</code>
+			</pre>
+
+			<p>Intenta lo siguiente dentro de la etiqueta styles:</p>
+			<pre>
+				<code>
+	/* Cambiar el color de fondo */
+	body {
+		background-color: grey;
+	}
+
+	/* Centra el texto y cambia tamano a 36 pixeles */
+	h1 {
+		text-align: center;
+		font-size: 36px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+				</code>
+			</pre>
+
+		</section>
+	</body>
 </html>
